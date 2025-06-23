@@ -1,0 +1,12 @@
+The main differences between Python 2 and Python 3 don’t really affect your function, but just to give you an idea:
+
+In Python 2, you write print "hello" without brackets, but in Python 3 you must use print("hello").
+
+Also, in Python 2, input() is a bit risky because it tries to evaluate what the user types as code. You’d use raw_input() instead. But in Python 3, input() just gives you a string, which is safer and simpler.
+
+One more small thing: dictionary methods like .keys() or .items() give you different types (list vs view), but that doesn’t matter here since you're only using count.get() with max().
+
+xrange() vs. range():
+Python 2 has xrange(), which creates an iterator for large ranges (saving memory), while Python 3 uses range() which creates a list.  
+
+Python 2's "raise" is a statement, while Python 3's "raise" is an expression, facilitating more flexible exception handling. 
